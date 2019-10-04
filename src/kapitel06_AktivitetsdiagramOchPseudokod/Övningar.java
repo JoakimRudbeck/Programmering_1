@@ -6,9 +6,9 @@ public class Övningar {
 
     public static void main(String[] args) {
 
-        //övning6_1();
-        //övning6_2();
-        //övning6_3();
+        övning6_1();
+        övning6_2();
+        övning6_3();
         övning6_4();
     }
 
