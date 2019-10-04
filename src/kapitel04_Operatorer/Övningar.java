@@ -7,8 +7,8 @@ public class Övningar {
 
     public static void main(String[] args) {
         övning4_2();
-        övning4_4();
-        övning4_5();
+        //övning4_4();
+        //övning4_5();
     }
 
     private static void övning4_2() {
