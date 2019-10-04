@@ -5,15 +5,12 @@ public class Uppgifter {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        /*
         uppgift4_2();
         uppgift4_4();
         uppgift4_5();
         uppgift4_6();
         uppgift4_7();
         utmaning();
-        */
-
     }
 
     private static void uppgift4_2() {
