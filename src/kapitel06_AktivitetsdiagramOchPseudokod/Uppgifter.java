@@ -9,6 +9,7 @@ public class Uppgifter {
     Läs in försäljning denna månad
     FörsäljningsPåslag = 8 % av försäljningen denna månad
     Öka månadslönen med FörsäljningsPåslag
+    Skriv ut månadslönen
 
 
     6.2:
@@ -22,7 +23,7 @@ public class Uppgifter {
 
     6.4:
     Uppgiften som detta aktivitetsdiagram löser är att avgöra om en bil är en Bra, Godkänd respektive Dålig bil med avseende på dess förbrukning (liten bensin per km)
-    
+
     */
 
 }
