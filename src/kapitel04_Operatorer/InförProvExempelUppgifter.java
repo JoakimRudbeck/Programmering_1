@@ -7,6 +7,14 @@ public class InförProvExempelUppgifter {
         ex2();
         ex3();
         ex4();
+        ex5();
+    }
+
+    private static void ex5() {
+        int a = 8;
+        int b = 5 * ++a;
+        int c = (66 % b++) % 11;
+        // Vad är värdet av c?
     }
 
     private static void ex1() {
@@ -15,7 +23,6 @@ public class InförProvExempelUppgifter {
         minaTal[0] -= minaTal.length % 2;
         // Hur ser minaTal ut efter denna körning?
     }
-
     private static void ex2() {
         int a = 5;
         int b = 5 % 3;
