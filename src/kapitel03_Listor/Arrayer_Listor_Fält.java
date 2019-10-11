@@ -5,6 +5,35 @@ import java.util.Scanner;
 public class Arrayer_Listor_Fält {
 
     public static void main(String[] args){
+
+
+        char[] betyg = new char[6];
+        betyg[0] = 'A';
+        betyg[1] = 'B';
+        betyg[2] = 'C';
+        betyg[3] = 'D';
+        betyg[4] = 'E';
+        betyg[5] = 'F';
+
+        System.out.println("Det finns " + betyg.length  + " st olika betyg");
+        System.out.println("Högsta betyg är " + betyg[0]);
+        System.out.println("Lägsta betyg är " + betyg[5]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         frukter();
         bytaPlatsPåTvåElementILista();
         antalOrdIMening();
