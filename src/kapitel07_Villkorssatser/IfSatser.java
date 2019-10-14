@@ -11,6 +11,7 @@ public class IfSatser {
         ifElseIfElseSats();
         equalsExempel();
         notContainsExempel();
+        VillkorExempel();
     }
 
     private static void notContainsExempel() {
@@ -62,6 +63,7 @@ public class IfSatser {
         // Här är hela if-satsen slut. All kod nedan kommer alltid att köras
         // förutsatt att vi inte får ett exekveringsfel innan :)
     }
+
     private static void equalsExempel() {
         Scanner scanner = new Scanner(System.in);
         String hej = scanner.nextLine();
@@ -71,5 +73,14 @@ public class IfSatser {
         else{
             System.out.println("Gick inte in i if-satsen");
         }
+    }
+    private static void VillkorExempel() {
+        if((9 % 3 != 0 && 3 == 12-9) || 6 <= 3*2  || 1==1){
+            System.out.println("Inne i jobbig if-sats!");
+        }
+        else{
+            System.out.println("Inne i else");
+        }
+        System.out.println("Utanför if-satsen, programmet fortsätter!");
     }
 }
