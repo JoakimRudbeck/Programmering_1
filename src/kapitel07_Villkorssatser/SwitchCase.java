@@ -6,10 +6,28 @@ public class SwitchCase {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        switchCaseExempel();
+        humörMedIf();
+        humörMedSwitchCase();
     }
 
-    private static void switchCaseExempel() {
+    private static void humörMedIf() {
+        System.out.println("Hur mår du idag?");
+        String humör = scanner.nextLine();
+        if(humör.equals("Bra")){
+            System.out.println(":)");
+        }
+        else if(humör.equals("Super")){
+                System.out.println(":D");
+        }
+        else if(humör.equals("Dåligt")){
+                System.out.println(":(");
+        }
+        else{
+            System.out.println("Jag kan inte tyda ditt humör!");
+        }
+    }
+
+    private static void humörMedSwitchCase() {
         System.out.println("Hur mår du idag?");
         String humör = scanner.nextLine();
 
@@ -26,7 +44,6 @@ public class SwitchCase {
             default:
                 System.out.println("Jag kan inte tyda ditt humör");
                 break;
-
         }
         System.out.println("Denna rad körs efter switch-case");
     }
