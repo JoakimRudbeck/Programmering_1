@@ -14,7 +14,28 @@ public class ForLoop {
         fyllaEnListaMedVärden();
         nestladForLoopExempel();
         besökaKöpCentret();
+        beräknaMedelvärdeUrEnListaMedTal();
 
+    }
+
+    private static void beräknaMedelvärdeUrEnListaMedTal() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Hur många tal vill du spara?");
+        int antal = Integer.valueOf(scan.nextLine());
+        int[] lista = new int[antal];
+
+        // Ger listan värden:
+        for(int i = 0; i < lista.length; i++){
+            System.out.println("Skriv in tal på plats " + (i+1) + ":");
+            lista[i] = scan.nextInt();
+        }
+        // Beräknar medelvärde:
+        int summa = 0;
+        for(int i = 0; i < lista.length; i++){
+            summa += lista[i];
+        }
+        double medelvärde = (double)summa / lista.length;
+        System.out.println("Medelvärdet av talen i listan är " + medelvärde);
     }
 
     private static void störstaTalILista() {
@@ -48,13 +69,14 @@ public class ForLoop {
         // i är iterationsvariabeln
         // Loopen håller på så länge i är mindre än 5 (dvs 5 varv)
         // I slutet av varje varv ökar iterationsvariabeln i med 1.
-        for(int i = 0; i < 5; i++){
-            System.out.println("Värdet på iterationsvariabeln i är " + i);
+        int b = 7;
+        for(int i = 44; i <= 126; i++){
+            if(i % 2 == 0){
+                System.out.println("Värdet på iterationsvariabeln i är " + i);
+            }
         }
 
-
-
-
+        System.out.println("Programmet fortsätter efter att for-loopen är klar.");
 
     }
 
