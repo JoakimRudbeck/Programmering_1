@@ -4,14 +4,49 @@ import java.util.Scanner;
 
 public class IfSatser {
     static Scanner scanner = new Scanner(System.in);
+    private static boolean uttryck1;
+    private static boolean uttryck2;
 
     public static void main(String[] args) {
-        ifSats();
-        ifElseSats();
-        ifElseIfElseSats();
+        ifSats_Syntax();
+        ifElseSats_Syntax();
+        ifElseIfElseSats_Syntax();
+        ifSats_Exempel();
+        ifElseIfElseSats_Exempel();
+        ifElseSats_Exempel();
         equalsExempel();
         notContainsExempel();
         VillkorExempel();
+    }
+
+    private static void ifSats_Syntax() {
+        // Syntax för if-sats:
+        if(uttryck1){
+            // Satser
+        }
+    }
+
+    private static void ifElseSats_Syntax() {
+        // Syntax för if-else-sats:
+        if(uttryck1){
+            // Satser
+        }
+        else{
+            // Satser
+        }
+    }
+
+    private static void ifElseIfElseSats_Syntax() {
+        // Syntax för if-else-if-else-sats:
+        if(uttryck1){
+            // satser
+        }
+        else if(uttryck2){
+            // satser
+        } // Du kan bygga på med fler else if om du vill.
+        else{
+            // satser
+        }
     }
 
     private static void notContainsExempel() {
@@ -25,7 +60,7 @@ public class IfSatser {
         }
     }
 
-    static void ifSats() {
+    static void ifSats_Exempel() {
         int a = 13;
         if(a < 10){
             System.out.printf("%d är mindre än 10.",a);
@@ -33,7 +68,7 @@ public class IfSatser {
         System.out.println("Denna kod körs oavsett, den ligger efter if-satsen.");
     }
 
-    static void ifElseSats() {
+    static void ifElseSats_Exempel() {
         int a = 5;
         int b = 3;
         if(a == b){
@@ -46,19 +81,21 @@ public class IfSatser {
         System.out.println("Denna körs alltid.");
     }
 
-    static void ifElseIfElseSats() {
-        int ålder = 15;
+    static void ifElseIfElseSats_Exempel() {
+        System.out.println("Ålder?");
+        int ålder = scanner.nextInt();
         // Koden kommer bara gå in i en av dessa kodblock.
         // Om ålder är 15 så kommer den gå in i första blocket men inte nästa trots att 15 < 65.
-        if(ålder < 65){
-            System.out.println("Du är vuxen.");
-        }
-        else if(ålder < 18){
+        if(ålder < 18){
             System.out.println("Du är ett barn.");
+        }
+        else if(ålder < 65){
+            System.out.println("Du är vuxen.");
         }
         else{
             System.out.println("Du är i pensionsålder.");
         }
+
 
         // Här är hela if-satsen slut. All kod nedan kommer alltid att köras
         // förutsatt att vi inte får ett exekveringsfel innan :)
@@ -67,7 +104,7 @@ public class IfSatser {
     private static void equalsExempel() {
         Scanner scanner = new Scanner(System.in);
         String hej = scanner.nextLine();
-        if(hej.equalsIgnoreCase("hej")){
+        if(hej.equalsIgnoreCase("hej")){ // Jämför utan att bry sig om stora / små bokstäver. Ex: "BRA".equalsIgnoreCase("bra") ger true.
             System.out.println("Inuti if-satsen.");
         }
         else{
