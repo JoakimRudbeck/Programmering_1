@@ -96,7 +96,6 @@ public class IfSatser {
             System.out.println("Du är i pensionsålder.");
         }
 
-
         // Här är hela if-satsen slut. All kod nedan kommer alltid att köras
         // förutsatt att vi inte får ett exekveringsfel innan :)
     }

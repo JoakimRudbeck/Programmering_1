@@ -3,12 +3,35 @@ package kapitel08_Repetitionssatser;
 import java.util.Scanner;
 
 public class Meny {
-        static Scanner scan = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
 
-    // Ett program som körs om och om igen tills användaren skriver in ordet "SLUTA"
+
     public static void main(String[] args) {
         menyExempel1();
         menyExempel2();
+    }
+
+    private static void menyExempel1() {
+        int[] a = {1,2,3};
+        System.out.println(a[3]);
+        Scanner scan = new Scanner(System.in);
+        String input = "";
+        while(!input.equals("SLUTA")){
+            skrivUtMeny();
+            input = scan.nextLine();
+            switch(input){
+                case "AREA":
+                    beräknaArea(scan);
+                    break;
+                case "VOLYM":
+                    beräknaVolym(scan);
+                    break;
+                case "SLUTA":
+                    break;
+                default:
+                    System.out.println("Skriv in antingen AREA, VOLYM eller SLUTA.");
+            }
+        }
     }
 
     private static void menyExempel2() {
@@ -53,42 +76,6 @@ public class Meny {
         System.out.println("Du hade " + procentRätt + "% rätt.");
 
 
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private static void menyExempel1() {
-        int[] a = {1,2,3};
-        System.out.println(a[3]);
-        Scanner scan = new Scanner(System.in);
-        String input = "";
-        while(!input.equals("SLUTA")){
-            skrivUtMeny();
-            input = scan.nextLine();
-            switch(input){
-                case "AREA":
-                    beräknaArea(scan);
-                    break;
-                case "VOLYM":
-                    beräknaVolym(scan);
-                    break;
-                case "SLUTA":
-                    break;
-                default:
-
-                    System.out.println("Skriv in antingen AREA, VOLYM eller SLUTA.");
-            }
-        }
     }
 
     private static void skrivUtMeny() {

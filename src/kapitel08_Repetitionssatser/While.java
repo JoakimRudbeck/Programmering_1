@@ -18,10 +18,12 @@ public class While {
         System.out.println("Nu avlsutades while-loopen eftersom villkoret inte längre är sant.");
     }
 
+
+
     private static void whileContinueExempel() {
         // Skriv ut alla tal som är delbara med 3
         int talet = 1;
-        while(talet <= 100){
+        while(talet <= 50){
             // Om talet inte är jämnt delbart med 3:
             if(talet % 3 != 0){
                 talet++;

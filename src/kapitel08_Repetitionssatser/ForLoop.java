@@ -15,7 +15,24 @@ public class ForLoop {
         nestladForLoopExempel();
         besökaKöpCentret();
         beräknaMedelvärdeUrEnListaMedTal();
+        ritaUppKvadrat();
 
+    }
+
+    private static void ritaUppKvadrat() {
+        System.out.println("Höjd?");
+        int höjd = Integer.valueOf(scan.nextLine());
+        System.out.println("Bredd?");
+        int bredd = Integer.valueOf(scan.nextLine());
+        System.out.println("Tecken?");
+        char tecken = scan.nextLine().charAt(0);
+
+        for(int i = 1; i <= höjd; i++){
+            for(int j = 1; j<= bredd; j++){
+                System.out.print(tecken + " ");
+            }
+            System.out.println();
+        }
     }
 
     private static void beräknaMedelvärdeUrEnListaMedTal() {
