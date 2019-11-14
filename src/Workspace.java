@@ -6,15 +6,25 @@ public class Workspace {
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        char markör = '*';
+        int[] antalkolumnPerRad = {2,4,6,8,10,12,14,12,10,8,6,4,2};
+        for(int rad = 0; rad< antalkolumnPerRad.length; rad++){
+            // lägga in blanksteg:
+            for(int k = 0; k < (14 - antalkolumnPerRad[rad])/2.0; k++){
+                System.out.print(" ");
+            }
 
-        int höjd = 20;
-        int bredd = 38;
-        for(int i = 1; i <= höjd; i++){
-            for(int j = 1; j<= bredd; j++){
-                System.out.print("* ");
+            for(int tecken = 0; tecken < antalkolumnPerRad[rad]; tecken++){
+                System.out.print(markör);
             }
             System.out.println();
         }
+        int a =5;
+
+
+    // 1000 ms = 1 s
+
+
 
 
 
