@@ -1,4 +1,4 @@
-package Kapitel9;
+package Kapitel09_Metoder;
 
 import java.util.Scanner;
 
@@ -7,6 +7,10 @@ public class BeräknaAreaOchVolymMeny {
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        System.out.println(fakultet(7));
+
+
 
         boolean kör = true;
         while(kör == true){
@@ -28,6 +32,17 @@ public class BeräknaAreaOchVolymMeny {
         System.out.println("Tack för idag.");
 
     }
+
+
+    static int fakultet(int tal){
+        int svar = 1;
+        for(int i = 1; i < tal; i++){
+            svar *= i;
+        }
+        return svar;
+
+    }
+
 
     // Metod som returnerar de val (1,2 eller 3) som användaren svarade.
     static int introduceraAnvändaren() {
