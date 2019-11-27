@@ -1,4 +1,4 @@
-## Viktiga begrepp inför provet:
+## Viktiga begrepp inför provet (kapitel 1 + 2):
 ###     * Kompilering, källkod, bytekod
 ###     * Programstruktur programblock, package, klass, metod
 ###     * 3 olika typer av fel som kan uppstå och exempel på dessa.
