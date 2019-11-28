@@ -8,7 +8,16 @@ public class UppgifterMetoder {
         kusinUppgiften();
         System.out.println(förstaHalvanAvOrdet("lampan"));
         System.out.println(hypotenusan(3,4));
+        int[] tal = {1, 4, 6, 2};
+        System.out.println(produktenAvTalILista(tal));
+    }
 
+    private static int produktenAvTalILista(int[] lista) {
+        int produkt = 1;
+        for(int i = 0; i < lista.length; i++){
+            produkt*=lista[i];
+        }
+        return produkt;
     }
 
     private static double hypotenusan(int katet1, int katet2) {
