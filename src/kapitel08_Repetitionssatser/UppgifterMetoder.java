@@ -6,6 +6,17 @@ public class UppgifterMetoder {
 
     public static void main(String[] args) {
         kusinUppgiften();
+        System.out.println(förstaHalvanAvOrdet("lampan"));
+        System.out.println(hypotenusan(3,4));
+
+    }
+
+    private static double hypotenusan(int katet1, int katet2) {
+        return Math.sqrt(katet1*katet1+katet2*katet2);
+    }
+
+    private static String förstaHalvanAvOrdet(String ord) {
+        return ord.substring(0,ord.length()/2);
     }
 
     private static void kusinUppgiften() {
@@ -20,10 +31,6 @@ public class UppgifterMetoder {
             summa += Integer.valueOf(scan.nextLine());
         }
         System.out.println("Totala åldern av alla kusiner är " + summa);
-
-
-
-
 
     }
 }
