@@ -1,8 +1,10 @@
-package kapitel08_Repetitionssatser;
+package Kapitel09_Metoder;
 
-import static kapitel08_Repetitionssatser.Meny.scan;
+import java.util.Scanner;
 
 public class UppgifterMetoder {
+
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         kusinUppgiften();
@@ -42,4 +44,38 @@ public class UppgifterMetoder {
         System.out.println("Totala åldern av alla kusiner är " + summa);
 
     }
+
+    static void exempelPåProvUppgift() {
+        System.out.println("Uppgift2:");
+        /*
+        Skapa en metod som givet en sträng returnerar strängen baklänges.
+        Anropa sedan din metod med en sträng som användaren skriver in.
+        Skriv ut värdet som din metod returnerade.
+         */
+        System.out.println("Skriv in ett ord, tack :)");
+        String ord = scan.nextLine();
+        String stringenBaklänges = baklänges(ord);
+        System.out.println(ord + " baklänges blir " + stringenBaklänges);
+    }
+
+    static String baklänges(String s){
+        // skapa en tom sträng
+        String svar = "";
+        // loopar igenom alla tecken i från slutet till början:
+        for(int i = s.length()-1; i>=0; i--){
+            // för varje tecken i strängen, lägg till tecknet till den tomma strängen
+            svar += s.charAt(i);
+        }
+        // returnera den fyllda strängen.
+        return svar;
+
+    }
+
+    static double avståndetMellan(double[] p1, double[] p2){
+        double deltaX = p1[0] - p2[0];
+        double deltaY = p2[1] - p2[1];
+        return Math.sqrt(deltaX + deltaY);
+    }
+
+
 }
