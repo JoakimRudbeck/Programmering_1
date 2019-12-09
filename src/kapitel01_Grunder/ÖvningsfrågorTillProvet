@@ -1,0 +1,44 @@
+Beskriv vad kompilering är för något
+
+Nämn tre metoder som finns för strängar
+
+Vad är en bit för något?
+
+Hur mågna bitar går det på en byte?
+
+Hur många byte reserveras i minnet då en double deklararar
+
+Vad är det för skillnad på att deklarera och tilldela en variabel
+
+Beskriv skillnaden mellan datatyperna short, int och long
+
+Nämn så många datatyper du kan
+
+Vad heter klassen som används för inmatning i Java?
+
+Varifrån startar alla Java-program?
+
+Vad kallas de mappliknande strukturer som ett projekt kan delas upp i?
+
+Beskriv skillnaden mellan en klass och en metod i Java.
+
+Du vill spara ditt meritvärde i en variabel. Vilken datatyp bör du använda för detta ?
+
+Vad kommer skrivas ut: System.out.println('A' + (char)32 + "S" + 65 + (char)66 + (int)3.14 + ("5"+"5"));
+
+Vad kommer skrivas ut: sout(4/3) ?
+
+Vad kommer skrivas ut: sout(2/3) ?
+
+Skapa en klass som innehåller en main metod som har 5 variabler:
+    en som sparar värdet 3.14
+    en som sparar värdet "Sommaren är kort";
+    en som sparar värdet att man inte är vuxen
+    en som innehåller efternamnet i "Zlatan Ibrahimovic"
+    en som innehåller dagar kvar till din 100-årsdag
+
+Skriv kod som omvandlar "3.14" till en double
+
+Skriv kod som omvandlar 123 till stängen "123"
+
+
