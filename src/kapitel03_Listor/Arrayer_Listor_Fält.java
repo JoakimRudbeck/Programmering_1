@@ -5,8 +5,16 @@ import java.util.Scanner;
 public class Arrayer_Listor_Fält {
 
     public static void main(String[] args){
+        betygExempel();
+        frukter();
+        bytaPlatsPåTvåElementILista();
+        antalOrdIMening();
+        listorIListor();
+        vilkenMeningÄrStörst();
+        exempelMedSplit();
+    }
 
-
+    private static void betygExempel() {
         char[] betyg = new char[6];
         betyg[0] = 'A';
         betyg[1] = 'B';
@@ -18,28 +26,6 @@ public class Arrayer_Listor_Fält {
         System.out.println("Det finns " + betyg.length  + " st olika betyg");
         System.out.println("Högsta betyg är " + betyg[0]);
         System.out.println("Lägsta betyg är " + betyg[5]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        frukter();
-        bytaPlatsPåTvåElementILista();
-        antalOrdIMening();
-        listorIListor();
-        vilkenMeningÄrStörst();
-        exempelMedSplit();
     }
 
     private static void exempelMedSplit() {
