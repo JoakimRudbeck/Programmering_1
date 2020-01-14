@@ -1,7 +1,8 @@
-Kap2:
-Hantera variabler av de vanligaste datatyperna.
-Göra typomvandlingar mellan olika datatyper.
-Använda de vanligaste metoderna for strängar såsom length(), charAt(), substring(), indexOf(), toUpperCase().
+## INFÖR PRAKTISKT KURSPROV (ÅTMINSTONE)
+###Kap2:
+####Hantera variabler av de vanligaste datatyperna.
+####Göra typomvandlingar mellan olika datatyper.
+####Använda de vanligaste metoderna for strängar såsom length(), charAt(), substring(), indexOf(), toUpperCase().
 
 Kap3:
 Skapa ett fält på två olika sätt.
