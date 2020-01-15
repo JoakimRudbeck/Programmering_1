@@ -5,13 +5,23 @@ import java.util.Scanner;
 public class Arrayer_Listor_Fält {
 
     public static void main(String[] args){
+        skrivaUtVärdenIEnLista();
+        exempelMedSplit();
         betygExempel();
         frukter();
         bytaPlatsPåTvåElementILista();
         antalOrdIMening();
         listorIListor();
         vilkenMeningÄrStörst();
-        exempelMedSplit();
+    }
+
+    private static void skrivaUtVärdenIEnLista() {
+        System.out.println("Skapar lista...");
+        String[] lista = {"hej", "hopp", "tjena"};
+        System.out.println("Värdet i listan är:");
+        System.out.println(lista[0]);
+        System.out.println(lista[1]);
+        System.out.println(lista[2]);
     }
 
     private static void betygExempel() {
@@ -28,6 +38,7 @@ public class Arrayer_Listor_Fält {
         System.out.println("Lägsta betyg är " + betyg[5]);
     }
 
+
     private static void exempelMedSplit() {
         String mening = "Detta är en mening";
         String[] listaMedAllaOrdIMeningen = mening.split(" ");
@@ -38,6 +49,7 @@ public class Arrayer_Listor_Fält {
         System.out.println(listaMedAllaOrdIMeningen[2]);
         System.out.println(listaMedAllaOrdIMeningen[3]);
     }
+
 
 
     private static void frukter() {
