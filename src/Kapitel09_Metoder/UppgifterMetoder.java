@@ -12,7 +12,41 @@ public class UppgifterMetoder {
         System.out.println(hypotenusan(3,4));
         int[] tal = {1, 4, 6, 2};
         System.out.println(produktenAvTalILista(tal));
+        int[] lista1 = {7, 3, -8};
+        int[] lista2 = {-1, 0, 14, 23};
+        int[] sammanslagenLista = sammanslagning(lista1, lista2);
+        for(int i=0; i<sammanslagenLista.length; i++){
+            System.out.print(sammanslagenLista[i] + ", ");
+        }
     }
+
+    static int[] sammanslagning(int[] l1, int[] l2){
+        // skapa en tom lista som är lika lång som summan av de två
+        // listornas längder.
+        // gå igenom första listan, ta ut varje värde och
+        // lägg i den nya listan.
+        // gör samma sak för lista 2.
+        // returnera den nya listan
+        int längdAvNyLista = l1.length + l2.length;
+        int[] nyaListan = new int[längdAvNyLista];
+        // loopar igenom lista1
+
+        for(int i = 0; i < l1.length; i++){
+            // ta ut värdet och ge till nyalistan
+            nyaListan[i] = l1[i];
+        }
+        // loopar igenom lista2:
+        for(int i = 0; i < l2.length; i++){
+            // ta ut värdet och ge till nyalistan
+            int värdet = l2[i]; // tar ut värdet från lista 2
+            // ge värdet till nya listan på rätt positiion
+            nyaListan[l1.length+i] = värdet;
+        }
+        return nyaListan;
+
+
+    }
+
 
     private static int produktenAvTalILista(int[] lista) {
         int produkt = 1;
