@@ -7,6 +7,8 @@ public class ForLoop {
     private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        ritaUppTriangel();
+        ritaUppRektangel();
         störstaTalILista();
         forLoopExempel();
         forLoopExempelFrågaAnvändaren();
@@ -15,11 +17,24 @@ public class ForLoop {
         nestladForLoopExempel();
         besökaKöpCentret();
         beräknaMedelvärdeUrEnListaMedTal();
-        ritaUppKvadrat();
 
     }
 
-    private static void ritaUppKvadrat() {
+    private static void ritaUppTriangel() {
+        System.out.println("Höjd?");
+        int höjd = Integer.valueOf(scan.nextLine());
+        System.out.println("Tecken?");
+        char tecken = scan.nextLine().charAt(0);
+
+        for(int i = 1; i <= höjd; i++){
+            for(int j = 1; j<= i; j++){
+                System.out.print(tecken + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void ritaUppRektangel() {
         System.out.println("Höjd?");
         int höjd = Integer.valueOf(scan.nextLine());
         System.out.println("Bredd?");
@@ -112,11 +127,6 @@ public class ForLoop {
     }
 
 
-
-
-
-
-
     private static void loopaIgenomEnLista() {
 
         String[] lista = {"mango", "äpple", "banan"};
@@ -130,10 +140,6 @@ public class ForLoop {
         }
         System.out.println("Nu är vi utanför loopen");
     }
-
-
-
-
 
 
 
