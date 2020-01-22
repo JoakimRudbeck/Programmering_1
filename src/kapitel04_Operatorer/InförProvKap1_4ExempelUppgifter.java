@@ -1,6 +1,6 @@
 package kapitel04_Operatorer;
 
-public class InförProvExempelUppgifter {
+public class InförProvKap1_4ExempelUppgifter {
 
     public static void main(String[] args) {
         ex1();
