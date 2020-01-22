@@ -3,7 +3,35 @@ package Kapitel09_Metoder;
 public class RandomSlumptal {
 
     public static void main(String[] args) {
-        simuleraTärningkast();
+        //simuleraTärningkast();
+        beräknaSannolikhetFörSexaPåTärning();
+
+
+    }
+
+    private static void beräknaSannolikhetFörSexaPåTärning() {
+
+        int antalkast = 1000000000;
+        int räknare = antalkast;
+        int antalSexor = 0;
+
+        long tidStart = System.currentTimeMillis(); // Tid i ms sedan 1 jan 1970.
+        while(räknare > 0){
+            räknare--;
+            int a = 1 + (int)(6*Math.random()); // Beräkna ett tal mellan 1 och 6.
+            //System.out.println(a);
+            if(a == 6){
+                antalSexor++;
+            }
+        }
+        long tidSlut = System.currentTimeMillis();
+        long tidFörfluten = tidSlut - tidStart;
+        double procent = 100*((double)antalSexor / antalkast);
+        System.out.println("Det blev " + antalSexor + " st sexor av totalt " + antalkast);
+        System.out.println("Det motsvarar " + procent + "%");
+        System.out.println("Matematiska korrekta är 1/6, ca " + 100*(1.0/6));
+
+        System.out.println("Det tog " + tidFörfluten + " ms att simulera " + antalkast + " tärningskast.");
     }
 
     private static void simuleraTärningkast() {
