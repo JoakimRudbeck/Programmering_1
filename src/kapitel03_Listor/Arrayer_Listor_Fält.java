@@ -13,6 +13,7 @@ public class Arrayer_Listor_Fält {
         antalOrdIMening();
         listorIListor();
         vilkenMeningÄrStörst();
+        elevNamnExempel();
     }
 
     private static void skrivaUtVärdenIEnLista() {
@@ -76,6 +77,7 @@ public class Arrayer_Listor_Fält {
     }
 
     // Räknar ut hur många ord det finns i en mening.
+
     static void antalOrdIMening(){
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Skriv in en mening, tack.");
@@ -84,7 +86,6 @@ public class Arrayer_Listor_Fält {
         String[] ordIMening = mening.split(" ");
         System.out.println("'" + mening + "' har " + ordIMening.length + " ord i sig.");
     }
-
     static void listorIListor(){
         int[] lista1 = {1,2,3};
         int[] lista2 = {4,5,6};
@@ -109,4 +110,28 @@ public class Arrayer_Listor_Fält {
         }
     }
 
+
+    private static void elevNamnExempel() {
+        String[] elevNamn = new String[3]; // en lista av 3 element
+        elevNamn[0] = "liam";
+        elevNamn[1] = "anton";
+        elevNamn[2] = "filippa";
+        // elevNamn[3] = "erik";   //GÅR INTE, index är bara 0, 1 och 2 vi får ett ArrayIndexOutOfBoundsException
+
+        System.out.println("Innan bytet:");
+        System.out.println(elevNamn[0]);
+        System.out.println(elevNamn[1]);
+        System.out.println(elevNamn[2]);
+
+        String temp = elevNamn[2];  // elevnamn är nu {"liam", "anton", "filippa"}
+        elevNamn[2] = elevNamn[0];  // elevnamn är nu {"liam", "anton", "liam"}
+        elevNamn[0] = temp;         // elevNamn är nu {"filippa", "anton", "liam"}
+
+        System.out.println("Efter bytet:");
+        System.out.println(elevNamn[0]);
+        System.out.println(elevNamn[1]);
+        System.out.println(elevNamn[2]);
+
+        String[] elevNamnVersion2 = {"liam", "anton", "filippa", "erik"};
+    }
 }
