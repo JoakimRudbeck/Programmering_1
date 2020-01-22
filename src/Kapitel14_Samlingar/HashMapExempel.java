@@ -1,11 +1,29 @@
 package Kapitel14_Samlingar;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class HashMapExempel {
 
     public static void main(String[] args) {
+        namnOchFavoritfärgExempel();
         fotbollsfansExempel();
+    }
+
+    private static void namnOchFavoritfärgExempel() {
+        // Hashmap används för att spara information som är parvis relaterade.
+        // Ex. Man vill spara namn och tillhörande favoritfärg:
+        // "Hanna", "Blå"
+        // "Joakim", "grön"
+        // "Kalle", "röd"
+
+        HashMap<String, String> namnOchFavvoFärg = new HashMap<>();
+        namnOchFavvoFärg.put("Hanna", "Blå");
+        namnOchFavvoFärg.put("Joakim", "Grön");
+        namnOchFavvoFärg.put("Kalle", "Röd");
+        for (String namn : namnOchFavvoFärg.keySet()) {
+            System.out.println(namn + " tycker om " + namnOchFavvoFärg.get(namn));
+        }
     }
 
     private static void fotbollsfansExempel() {
