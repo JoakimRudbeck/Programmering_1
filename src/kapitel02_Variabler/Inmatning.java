@@ -9,7 +9,7 @@ public class Inmatning {
     }
 
 
-    private static void scanner() {
+    static void scanner() {
         Scanner minSkanner = new Scanner(System.in); // För att i Java få input från användaren kan ett Scanner-objekt användas
         System.out.println("Skriv in ett ord, tack: ");
         // Nu vill vi använda vårt scanner-objekt och anropa dess nextLine-metod.
@@ -22,7 +22,7 @@ public class Inmatning {
         System.out.println("Du skrev talet " + tal);
     }
 
-    private static void merScanner() {
+    static void merScanner() {
         System.out.println("Vad heter du?");
         Scanner minSkanner = new Scanner(System.in);            // Skapar ett Scanner-objekt
         String namn = minSkanner.nextLine();                    // Läser in en rad skriven från tangentbordet
