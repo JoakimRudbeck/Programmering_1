@@ -1,5 +1,5 @@
 package kapitel02_Variabler;
-import java.util.Scanner;
+import java.util.Scanner;  // Denna rad krävs då vi ska använda klassen Scanner.
 
 public class Inmatning {
 
@@ -8,15 +8,17 @@ public class Inmatning {
         merScanner();
     }
 
-    // För att få input från användaren använder
-    // man i Java ett Scanner-objekt.
+
     private static void scanner() {
-        Scanner minSkanner = new Scanner(System.in);
+        Scanner minSkanner = new Scanner(System.in); // För att i Java få input från användaren kan ett Scanner-objekt användas
         System.out.println("Skriv in ett ord, tack: ");
-        String indata = minSkanner.nextLine();
+        // Nu vill vi använda vårt scanner-objekt och anropa dess nextLine-metod.
+        String indata = minSkanner.nextLine();  // nextLine kommer returnera den sträng som användaren skriver in via tangentbordet följt av enter.
+        // variabeln indata innehåller nu den sträng som användren skrev in.
         System.out.println("Du skrev " + indata);
         System.out.println("Skriv in ett heltal, tack: ");
-        int tal = minSkanner.nextInt();
+        int tal = minSkanner.nextInt(); // Vi kan även använda metoden nextIn om vi vet att användaren kommer skriva in ett heltal.
+        // Notera att om användaren inte skriver in ett heltal då nextInt används får vi ett exekveringsfel och programmet kraschar.
         System.out.println("Du skrev talet " + tal);
     }
 

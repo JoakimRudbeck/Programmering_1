@@ -5,9 +5,10 @@ public class Strängar {
     public static void main(String[] args) {
         slåIhopSträngar();
         strängMetoder();
+        strängarExempel();
     }
 
-    private static void slåIhopSträngar() {
+    static void slåIhopSträngar() {
         String s1 = "Musse";
         String mellanslag = " ";
         String s2 = "Pigg";
@@ -15,7 +16,7 @@ public class Strängar {
         System.out.println(mussePigg);
     }
 
-    private static void strängMetoder() {
+    static void strängMetoder() {
         String kalle = "Kalle Anka";
         int kallesLängd = kalle.length();                       // Metoden length() ger längden av en sträng
         System.out.println(kallesLängd) ;                       // Skriver ut 10 eftersom "Kalle Anka" består av 10 tecken
@@ -25,5 +26,19 @@ public class Strängar {
         System.out.println(kalleMedSmå);
         String kalleMedStora = kalle.toUpperCase();             // Metoden toUpperCase() gör om alla tecken i strängen till stora bokstäver
         System.out.println(kalleMedStora);
+    }
+
+    static void strängarExempel() {
+        String s = "Sommarlov är skönt!";
+        int längd = s.length();
+        System.out.println(s + " har längden " + längd);
+        String delAvSträng = s.substring(7,19);
+        System.out.println(delAvSträng);
+
+        char c = s.charAt(5);
+        System.out.println("Tecknet på index 9 är " + c);
+
+        int indexOfMellanslag = s.indexOf(' ');
+        System.out.println("Mellanslag finns på index " + indexOfMellanslag);
     }
 }
