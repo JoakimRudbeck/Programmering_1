@@ -11,7 +11,7 @@ public class Övningar {
         övning4_5();
     }
 
-    private static void övning4_2() {
+    static void övning4_2() {
         System.out.println("Övning 4.2");
         // Fråga användaren efter ett tal i månader
         System.out.println("Skriv in antal månader:");
@@ -26,7 +26,7 @@ public class Övningar {
         System.out.println(" och " + rest + " månader.");
     }
 
-    private static void övning4_4() {
+    static void övning4_4() {
         System.out.println("Övning 4.4");
         int tal = 5;
         System.out.print(tal--);  // denna rad skriver först ut 5 och sedan minskar den värdet på tal till 4.
@@ -36,7 +36,7 @@ public class Övningar {
         // D.v.s. skriver ut 5433
     }
 
-    private static void övning4_5() {
+    static void övning4_5() {
         System.out.println("Övning 4.5");
         int tal1 = 5 + 6%4;             // motsv 5 + 2 ty modulo går före plus.
         System.out.println(tal1);       // skriver ut 7.
@@ -46,4 +46,5 @@ public class Övningar {
         tal3 *= 2.5 + 1;                // motsv *= 3.5
         System.out.println(tal3);       // skriver ut 17.5
     }
+
 }

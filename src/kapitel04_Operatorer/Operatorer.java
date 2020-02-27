@@ -3,6 +3,7 @@ package kapitel04_Operatorer;
 import java.util.Scanner;
 
 public class Operatorer {
+
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Operatorer {
         tilldelandeOperator();
     }
 
-    private static void tilldelandeOperatorerSid52() {
+    static void tilldelandeOperatorerSid52() {
         // Tilldelande operator, sid 52.
 
         int a = 5;

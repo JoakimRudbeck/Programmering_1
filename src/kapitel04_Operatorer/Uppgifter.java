@@ -13,7 +13,7 @@ public class Uppgifter {
         utmaning();
     }
 
-    private static void uppgift4_2() {
+    static void uppgift4_2() {
         System.out.println("Uppgift 4.2");
         System.out.println("Skriv in ett heltal");
         int tal = Integer.valueOf(scanner.nextLine());
@@ -41,7 +41,7 @@ public class Uppgifter {
         System.out.printf("Talet %d avrundat blir %d\n", mittTal, mittTalAvrundat);
     }
 
-    private static void uppgift4_5() {
+    static void uppgift4_5() {
         System.out.println("Uppgift 4.5");
         System.out.println("Mata in ett bråktal på formen A/B");
         String indataSträng = scanner.nextLine(); // t.e.x. "13/5"
@@ -56,7 +56,7 @@ public class Uppgifter {
         System.out.println("Talet " + täljare + "/" + nämnare + " blir i blandad form: " + svarIBlandadForm);
     }
 
-    private static void uppgift4_6() {
+    static void uppgift4_6() {
         System.out.println("Uppgift 4.6");
         System.out.println("Ange antal timmar:");
         int timmar = scanner.nextInt();
@@ -71,7 +71,7 @@ public class Uppgifter {
         System.out.printf("%.3f h = %.1f min = %d s\n", totTimmar, totMinuter, totSekunder);
     }
 
-    private static void uppgift4_7() {
+    static void uppgift4_7() {
         System.out.println("Uppgift 4.7");
         System.out.println("Ange tid i hela sekunder, tack:");
         int tidISek = scanner.nextInt();
@@ -84,7 +84,7 @@ public class Uppgifter {
         System.out.printf("%d sekunder = %d timmar, %d minuter, %d sekunder", tidISekOriginal, timmar, minuter, sekunder);
     }
 
-    private static void utmaning() {
+    static void utmaning() {
         char[] bokstäver = {'A', 'B', 'C'};
         String[] strängar = {"ABCDEF", "GHIJKL", "MNOPQRSTUVWXYZ"};
 
@@ -97,4 +97,5 @@ public class Uppgifter {
         // Vad skrivs ut och varför?
         System.out.println(santEllerFalskt);
     }
+
 }
