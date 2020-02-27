@@ -37,4 +37,4 @@ public class Program {      // Den här raden deklararer en Java-klass med namne
     }
 
 
-}   // Den här måsvingen avslutar hela Java-klassen
+}   // Den här "måsvingen" avslutar hela Java-klassen
