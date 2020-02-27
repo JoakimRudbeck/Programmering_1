@@ -3,6 +3,7 @@ package kapitel07_Villkorssatser;
 import java.util.Scanner;
 
 public class SwitchCase {
+
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class SwitchCase {
         humörMedSwitchCase();
     }
 
-    private static void humörMedIf() {
+    static void humörMedIf() {
         System.out.println("Hur mår du idag?");
         String humör = scanner.nextLine();
         if(humör.equals("Bra")){
@@ -27,7 +28,7 @@ public class SwitchCase {
         }
     }
 
-    private static void humörMedSwitchCase() {
+    static void humörMedSwitchCase() {
         System.out.println("Hur mår du idag?");
         String humör = scanner.nextLine();
 
@@ -47,4 +48,5 @@ public class SwitchCase {
         }
         System.out.println("Denna rad körs efter switch-case");
     }
+
 }

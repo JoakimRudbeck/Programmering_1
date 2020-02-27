@@ -3,9 +3,10 @@ package kapitel07_Villkorssatser;
 import java.util.Scanner;
 
 public class IfSatser {
+
     static Scanner scanner = new Scanner(System.in);
-    private static boolean uttryck1;
-    private static boolean uttryck2;
+    static boolean uttryck1;
+    static boolean uttryck2;
 
     public static void main(String[] args) {
         ifSats_Syntax();
@@ -19,14 +20,14 @@ public class IfSatser {
         VillkorExempel();
     }
 
-    private static void ifSats_Syntax() {
+    static void ifSats_Syntax() {
         // Syntax för if-sats:
         if(uttryck1){
             // Satser
         }
     }
 
-    private static void ifElseSats_Syntax() {
+    static void ifElseSats_Syntax() {
         // Syntax för if-else-sats:
         if(uttryck1){
             // Satser
@@ -36,7 +37,7 @@ public class IfSatser {
         }
     }
 
-    private static void ifElseIfElseSats_Syntax() {
+    static void ifElseIfElseSats_Syntax() {
         // Syntax för if-else-if-else-sats:
         if(uttryck1){
             // satser
@@ -49,7 +50,7 @@ public class IfSatser {
         }
     }
 
-    private static void notContainsExempel() {
+    static void notContainsExempel() {
         System.out.println("Skriv in ett ord, tack:");
         String input = scanner.nextLine();
         if(!input.contains("a")){
@@ -100,7 +101,7 @@ public class IfSatser {
         // förutsatt att vi inte får ett exekveringsfel innan :)
     }
 
-    private static void equalsExempel() {
+    static void equalsExempel() {
         Scanner scanner = new Scanner(System.in);
         String hej = scanner.nextLine();
         if(hej.equalsIgnoreCase("hej")){ // Jämför utan att bry sig om stora / små bokstäver. Ex: "BRA".equalsIgnoreCase("bra") ger true.
@@ -110,7 +111,8 @@ public class IfSatser {
             System.out.println("Gick inte in i if-satsen");
         }
     }
-    private static void VillkorExempel() {
+
+    static void VillkorExempel() {
         if((9 % 3 != 0 && 3 == 12-9) || 6 <= 3*2  || 1==1){
             System.out.println("Inne i jobbig if-sats!");
         }
@@ -119,4 +121,5 @@ public class IfSatser {
         }
         System.out.println("Utanför if-satsen, programmet fortsätter!");
     }
+
 }

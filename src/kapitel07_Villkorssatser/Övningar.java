@@ -3,73 +3,49 @@ package kapitel07_Villkorssatser;
 import java.util.Scanner;
 
 public class Övningar {
+
     static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
-        //övning7_1();
-        //övning7_2();
-        //övning7_3();
-        //övning7_4();
-        //övning7_5();
-        //övning7_6();
-        //övning7_7();
+        övning7_1();
+        övning7_2();
+        övning7_3();
+        övning7_4();
+        övning7_5();
+        övning7_6();
+        övning7_7();
     }
 
-    private static void övning7_7() {
-        double behållning = 1000;
-        System.out.println("MENY");
-        System.out.println("1. Insättning");
-        System.out.println("2. Uttag");
-        System.out.println("3. Visa behållning");
-        String val = scan.nextLine();
-        switch (val) {
-            case "1":
-                System.out.println("Hur mycket vill du sätta in?");
-                double insättning = Double.valueOf(scan.nextLine());
-                behållning += insättning;
-                System.out.println("Behållningen är nu " + behållning);
-                break;
-            case "2":
-                System.out.println("Hur mycket vill du ta ut?");
-                double uttag = Double.valueOf(scan.nextLine());
-                if(uttag <= behållning) {
-                    behållning -= uttag;
-                    System.out.println("Behållningen är nu " + behållning);
-                }
-                else {
-                    System.out.println("Det finns inte tillräckligt med pengar att ta ut.");
-                }
-                break;
-            case "3":
-                System.out.println("Behållningen är " + behållning);
-                break;
-        }
-
-    }
-
-    private static void övning7_5() {
-        System.out.println("Längd?");
-        //double längd = ...
-        System.out.println("Vind?");
-    }
-
-    private static void övning7_4() {
-        int taxa = 10;
+    static void övning7_1() {
+        System.out.println("Övning 7.1:");
         System.out.println("Ålder?");
-        int ålder = Integer.valueOf(scan.nextLine());
-        if(ålder < 15 || ålder >= 65){
-            taxa /= 2;
-        }
-        if(ålder < 0){
-            System.out.println("Ålder måste vara ett naturligt tal.");
+        int ålder = scan.nextInt();
+        if(ålder >= 12){
+            System.out.println("Du får delta på tävlingen");
         }
         else{
-            System.out.println("Det kostar " + taxa + " kr.");
+            System.out.println("Du får tyvärr inte delta på tävlingen.");
         }
-
-
     }
 
-    private static void övning7_3() {
+    static void övning7_2() {
+        System.out.println("Övning 7.2:");
+        double tankVolym = 50;
+        double prisPerLiter = 9.50;
+        System.out.println("Hur mycker etanol finns i tanken?");
+        double etanolITanken = scan.nextDouble();
+        if (etanolITanken > 10){
+            System.out.println("Kör vidare.");
+        }
+        else{
+            System.out.println("Du bör tanka");
+            double literTillFullTank = tankVolym - etanolITanken;
+            double prisFörAttFåFullTank = literTillFullTank * prisPerLiter;
+            System.out.println("Du bör tanka " + literTillFullTank + " liter, det kommer kosta " + prisFörAttFåFullTank + " kr.");
+        }
+    }
+
+    static void övning7_3() {
         int taxa = 5;
         System.out.println("Ålder?");
         int ålder = Integer.valueOf(scan.nextLine());
@@ -84,8 +60,28 @@ public class Övningar {
         }
     }
 
+    static void övning7_4() {
+        int taxa = 10;
+        System.out.println("Ålder?");
+        int ålder = Integer.valueOf(scan.nextLine());
+        if(ålder < 15 || ålder >= 65){
+            taxa /= 2;
+        }
+        if(ålder < 0){
+            System.out.println("Ålder måste vara ett naturligt tal.");
+        }
+        else{
+            System.out.println("Det kostar " + taxa + " kr.");
+        }
+    }
 
-    private static void övning7_6() {
+    static void övning7_5() {
+        System.out.println("Längd?");
+        //double längd = ...
+        System.out.println("Vind?");
+    }
+
+    static void övning7_6() {
         // Läs uppgiften på s.87
         // Diskutera med grannen hur lösas?!
 
@@ -131,51 +127,37 @@ public class Övningar {
         System.out.println("Tot pris för " + antal + " skivor är " + priset + " SEK");
 
         // Testkör
-
-
-
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private static void övning7_1() {
-
-        System.out.println("Övning 7.1:");
-        System.out.println("Ålder?");
-        int ålder = scan.nextInt();
-        if(ålder >= 12){
-            System.out.println("Du får delta på tävlingen");
-        }
-        else{
-            System.out.println("Du får tyvärr inte delta på tävlingen.");
-        }
-    }
-
-    private static void övning7_2() {
-        System.out.println("Övning 7.2:");
-        double tankVolym = 50;
-        double prisPerLiter = 9.50;
-        System.out.println("Hur mycker etanol finns i tanken?");
-        double etanolITanken = scan.nextDouble();
-        if (etanolITanken > 10){
-            System.out.println("Kör vidare.");
-        }
-        else{
-            System.out.println("Du bör tanka");
-            double literTillFullTank = tankVolym - etanolITanken;
-            double prisFörAttFåFullTank = literTillFullTank * prisPerLiter;
-            System.out.println("Du bör tanka " + literTillFullTank + " liter, det kommer kosta " + prisFörAttFåFullTank + " kr.");
+    static void övning7_7() {
+        double behållning = 1000;
+        System.out.println("MENY");
+        System.out.println("1. Insättning");
+        System.out.println("2. Uttag");
+        System.out.println("3. Visa behållning");
+        String val = scan.nextLine();
+        switch (val) {
+            case "1":
+                System.out.println("Hur mycket vill du sätta in?");
+                double insättning = Double.valueOf(scan.nextLine());
+                behållning += insättning;
+                System.out.println("Behållningen är nu " + behållning);
+                break;
+            case "2":
+                System.out.println("Hur mycket vill du ta ut?");
+                double uttag = Double.valueOf(scan.nextLine());
+                if(uttag <= behållning) {
+                    behållning -= uttag;
+                    System.out.println("Behållningen är nu " + behållning);
+                }
+                else {
+                    System.out.println("Det finns inte tillräckligt med pengar att ta ut.");
+                }
+                break;
+            case "3":
+                System.out.println("Behållningen är " + behållning);
+                break;
         }
     }
+
 }

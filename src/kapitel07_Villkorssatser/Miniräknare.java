@@ -10,21 +10,21 @@ public class Miniräknare {
         miniRäknare();
     }
 
-    private static void miniRäknare() {
+    static void miniRäknare() {
     /*
-    Skriv en miniräknare som klarar av
-    att beräkna "a # b" där a och b är heltal
-    och # är någon av operatorerna + - * /
+        Skriv en miniräknare som klarar av
+        att beräkna "a # b" där a och b är heltal
+        och # är någon av operatorerna + - * /
 
-    OBS: Användaren matar in "a # b".
+        OBS: Användaren matar in "a # b".
 
-    T.ex
-    "3 + 7" --> 10
-    "3 * 7" --> 21
+        T.ex
+        "3 + 7" --> 10
+        "3 * 7" --> 21
 
-    Tips:
-    "a # b".split(" "); kommer ge en lista med
-            ["a", "#", "b"]
+        Tips:
+        "a # b".split(" "); kommer ge en lista med
+                ["a", "#", "b"]
     */
 
         // En ansats till lösning:
