@@ -3,15 +3,15 @@ package kapitel08_Repetitionssatser;
 import java.util.Scanner;
 
 public class Meny {
-    static Scanner scan = new Scanner(System.in);
 
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         menyExempel1();
         menyExempel2();
     }
 
-    private static void menyExempel1() {
+    static void menyExempel1() {
         int[] a = {1,2,3};
         System.out.println(a[3]);
         Scanner scan = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class Meny {
         }
     }
 
-    private static void menyExempel2() {
+    static void menyExempel2() {
         /*
         För alltid:
             Slumpa fram två tal
@@ -74,11 +74,9 @@ public class Meny {
         }
         double procentRätt = 100 * ((double) poäng / antalSpelade);
         System.out.println("Du hade " + procentRätt + "% rätt.");
-
-
     }
 
-    private static void skrivUtMeny() {
+    static void skrivUtMeny() {
         System.out.println();
         System.out.println("Vad vill du göra?");
         System.out.println("\t[AREA]\t Beräkna area av rektangel");
@@ -87,34 +85,23 @@ public class Meny {
     }
 
     static void beräknaArea(Scanner scan) {
-        try{
-            System.out.println("Rektangelns bas?");
-            double bas = Double.valueOf(scan.nextLine());
-            System.out.println("Rektangelns höjd?");
-            double höjd = Double.valueOf(scan.nextLine());
-            double area = bas * höjd;
-            System.out.printf("Rektangelns area är %.1f area-enheter.\n",  area);
-        }
-        catch(NumberFormatException error){
-            System.out.println("Du angav inte ett decimaltal med punkt som kommatecken.");
-            System.out.println();
-        }
+        System.out.println("Rektangelns bas?");
+        double bas = Double.valueOf(scan.nextLine());
+        System.out.println("Rektangelns höjd?");
+        double höjd = Double.valueOf(scan.nextLine());
+        double area = bas * höjd;
+        System.out.printf("Rektangelns area är %.1f area-enheter.\n",  area);
     }
 
     static void beräknaVolym(Scanner scan) {
-        try{
-            System.out.println("Rätblockets bredd?");
-            double bredd = Double.valueOf(scan.nextLine());
-            System.out.println("Rätblockets djup?");
-            double djup = Double.valueOf(scan.nextLine());
-            System.out.println("Rätblockets höjd?");
-            double höjd = Double.valueOf(scan.nextLine());
-            double volym = bredd * djup * höjd;
-            System.out.printf("Rätblockets volym är %.1f volym-enheter.\n", volym);
-        }
-        catch(NumberFormatException error){
-            System.out.println("Du angav inte ett decimaltal med punkt som kommatecken.");
-            System.out.println();
-        }
+        System.out.println("Rätblockets bredd?");
+        double bredd = Double.valueOf(scan.nextLine());
+        System.out.println("Rätblockets djup?");
+        double djup = Double.valueOf(scan.nextLine());
+        System.out.println("Rätblockets höjd?");
+        double höjd = Double.valueOf(scan.nextLine());
+        double volym = bredd * djup * höjd;
+        System.out.printf("Rätblockets volym är %.1f volym-enheter.\n", volym);
     }
+
 }
