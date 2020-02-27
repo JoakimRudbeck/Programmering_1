@@ -7,4 +7,5 @@
 ### En algoritm kan uttryckas med pseudokod, ett aktivitetsdiagram eller med programkod.
 
 ## RF 6.3:
-### Hitills har vi enbart jobbat med kontrollstrukturen sekvens, d.v.s. våra program har utförts i en sekvens. En instruktion efter en annan, såom man läser en bok.
+### Hitills har vi enbart jobbat med kontrollstrukturen sekvens, d.v.s. våra program har utförts i en sekvens:
+### En instruktion efter en annan, såsom man läser en bok.
