@@ -11,7 +11,7 @@ public class PROVMALL_FÖRNAMN_EFTERNAMN{
     =============================================
                 ### BETYGSGRÄNSER ###
 
-                TOTALT: 20   POÄNG
+                TOTALT: 18   POÄNG
 
                     E:  6    POÄNG
                     D:  8    POÄNG
