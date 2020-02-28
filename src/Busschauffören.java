@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BUSSEN {
+public class Busschauffören {
 
     static Scanner scanner = new Scanner(System.in);
 
@@ -36,7 +36,6 @@ public class BUSSEN {
                     break;
                 }
             }
-
         }
     }
 }
