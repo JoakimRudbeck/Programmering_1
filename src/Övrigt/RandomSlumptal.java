@@ -1,4 +1,4 @@
-package Kapitel09_Metoder;
+package Övrigt;
 
 public class RandomSlumptal {
 
