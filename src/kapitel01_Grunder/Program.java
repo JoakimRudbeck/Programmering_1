@@ -10,7 +10,7 @@ package kapitel01_Grunder;
  */
 
 
-public class Program {      // Den här raden deklararer en Java-klass med namnet Program. Klasser börjar med stor bokstav.
+public class Program {      // Den här raden deklararer en Java-klass med namnet Program. Klasser i Java börjar med stor bokstav.
 
     public static void main(String[] args) {
         /*
@@ -26,15 +26,15 @@ public class Program {      // Den här raden deklararer en Java-klass med namne
         enAnnanUppgift();
     }   // Den här "måsvingen" avslutar main-metoden.
 
-    // Här kommer en annan metod.
+    // Här kommer en metod med namnet uppgiftABC
     static void uppgiftABC(){ // Metoden börjar.
         System.out.println("Detta är kod inuti metoden uppgiftABC()");
     }   // Metoden avslutas
 
-    // Att skriva variabelnamn eller metodnamn såhär: detHärEttVariabelNamn kallas att skriva i camelCase.
-    static void enAnnanUppgift(){
+    // Här är en metod med namnet enAnnanUppgift
+    static void enAnnanUppgift(){ // Att skriva variabelnamn eller metodnamn såhär: detHärEttVariabelNamn kallas att skriva i camelCase.
         System.out.println("Detta är kod inuti metoden enAnnanUppgift()");
     }
 
 
-}   // Den här måsvingen avslutar hela Java-klassen
+}   // Den här "måsvingen" avslutar hela Java-klassen

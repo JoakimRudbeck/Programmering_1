@@ -37,4 +37,5 @@ public class Villkor {
         // Vad tror du vi får för utskrift och varför?
         System.out.println(((8%3) < 5 && 4/3 > 1) || 6 < 1+2+3) ;
     }
+
 }

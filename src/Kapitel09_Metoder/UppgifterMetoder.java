@@ -43,12 +43,9 @@ public class UppgifterMetoder {
             nyaListan[l1.length+i] = värdet;
         }
         return nyaListan;
-
-
     }
 
-
-    private static int produktenAvTalILista(int[] lista) {
+    static int produktenAvTalILista(int[] lista) {
         int produkt = 1;
         for(int i = 0; i < lista.length; i++){
             produkt*=lista[i];
@@ -56,15 +53,15 @@ public class UppgifterMetoder {
         return produkt;
     }
 
-    private static double hypotenusan(int katet1, int katet2) {
+    static double hypotenusan(int katet1, int katet2) {
         return Math.sqrt(katet1*katet1+katet2*katet2);
     }
 
-    private static String förstaHalvanAvOrdet(String ord) {
+    static String förstaHalvanAvOrdet(String ord) {
         return ord.substring(0,ord.length()/2);
     }
 
-    private static void kusinUppgiften() {
+    static void kusinUppgiften() {
         // variabel som håller koll på summan av åldrarna
         System.out.println("Hur många kusiner har du?");
         int antalKusiner = Integer.valueOf(scan.nextLine());
@@ -76,7 +73,6 @@ public class UppgifterMetoder {
             summa += Integer.valueOf(scan.nextLine());
         }
         System.out.println("Totala åldern av alla kusiner är " + summa);
-
     }
 
     static void exempelPåProvUppgift() {
@@ -102,7 +98,6 @@ public class UppgifterMetoder {
         }
         // returnera den fyllda strängen.
         return svar;
-
     }
 
     static double avståndetMellan(double[] p1, double[] p2){
@@ -110,6 +105,5 @@ public class UppgifterMetoder {
         double deltaY = p2[1] - p2[1];
         return Math.sqrt(deltaX + deltaY);
     }
-
 
 }

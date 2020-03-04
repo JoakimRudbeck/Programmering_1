@@ -16,11 +16,11 @@ public class Typomvandlingar {
 
         // Från char till int:
         char aAsChar = 'a';
-        int aAsInt = aAsChar; // aAsInt kommer få värdet 97 eftersom a motsvaras av talet 97 i ASCII-tabellen.
+        int aAsInt = aAsChar;           // aAsInt kommer få värdet 97 eftersom a motsvaras av talet 97 i ASCII-tabellen.
 
         // Från int till char:
         int heltal = 65;
-        char tecken = (char) heltal; // tecken kommer ha värdet A ty 65 motsvarar A i ASCII-tabellen.
+        char tecken = (char) heltal;    // tecken kommer ha värdet A ty 65 motsvarar A i ASCII-tabellen.
         System.out.println(heltal);
         System.out.println(tecken);
 
@@ -35,8 +35,8 @@ public class Typomvandlingar {
 
         // Från double till String:
         double minDouble = 2.71828;
-        String taletESomString = String.valueOf(minDouble); // "2.71828"
-        String alternativtSätt = Double.toString(minDouble); // Samma resultat "2.71828"
+        String taletESomString = String.valueOf(minDouble);     // "2.71828"
+        String alternativtSätt = Double.toString(minDouble);    // Samma resultat "2.71828"
 
         // Från String till double:
         String minSträng2 = "3.14159";

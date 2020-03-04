@@ -1,16 +1,13 @@
-package Kapitel09_Metoder;
+package Övrigt;
 
 public class RandomSlumptal {
 
     public static void main(String[] args) {
-        //simuleraTärningkast();
+        simuleraTärningkast();
         beräknaSannolikhetFörSexaPåTärning();
-
-
     }
 
-    private static void beräknaSannolikhetFörSexaPåTärning() {
-
+    static void beräknaSannolikhetFörSexaPåTärning() {
         int antalkast = 1000000000;
         int räknare = antalkast;
         int antalSexor = 0;
@@ -30,15 +27,14 @@ public class RandomSlumptal {
         System.out.println("Det blev " + antalSexor + " st sexor av totalt " + antalkast);
         System.out.println("Det motsvarar " + procent + "%");
         System.out.println("Matematiska korrekta är 1/6, ca " + 100*(1.0/6));
-
         System.out.println("Det tog " + tidFörfluten + " ms att simulera " + antalkast + " tärningskast.");
     }
 
-    private static void simuleraTärningkast() {
+    static void simuleraTärningkast() {
         while(true) {
-
             int slumptal = 1 + (int)(6 * Math.random()); // Math.random() ger ett värde mellan 0.0 och 0.999..
             System.out.println(slumptal);
         }
     }
+
 }

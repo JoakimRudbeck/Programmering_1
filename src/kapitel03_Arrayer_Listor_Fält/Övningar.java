@@ -1,17 +1,19 @@
-package kapitel03_Listor;
+package kapitel03_Arrayer_Listor_Fält;
 
 import java.util.Scanner;
 
 public class Övningar {
 
+    // Ett smart och tidsbesparande tips är att skapa sitt scanner-objekt här så kan den användas överallt inom klassen.
     static Scanner scanner = new Scanner(System.in);
+    // Viktigt dock att göra den statisk med static
 
     public static void main(String[] args) {
         övning3_1();
         övning3_2();
     }
 
-    private static void övning3_1() {
+    static void övning3_1() {
         System.out.println("Övning 3.1");
         int[] minaTal = new int[4];
         minaTal[0] = scanner.nextInt();
@@ -25,7 +27,7 @@ public class Övningar {
         System.out.print(minaTal[3]+ ".");
     }
 
-    private static void övning3_2() {
+    static void övning3_2() {
         System.out.println("Övning 3.2");
         int[] treTal = new int[3];
         System.out.println("Skriv in tal 1:");

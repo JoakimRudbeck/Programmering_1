@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Övningar {
 
     public static void main(String[] args) {
-
         övning6_1();
         övning6_2();
         övning6_3();
@@ -22,28 +21,26 @@ public class Övningar {
             Skriv ut slutvärdet
         */
 
-
         // Omsatt till kod:
 
-        //     Läs in tre heltal:
-
+        // Läs in tre heltal:
         Scanner scan = new Scanner(System.in);
         System.out.println("Skriv in 3 heltal");
         int[] treTal = {scan.nextInt(), scan.nextInt(), scan.nextInt()};
 
-        //    Multiplicera talen med 2,3 respektive 4
+        // Multiplicera talen med 2,3 respektive 4
         treTal[0] *= 2;
         treTal[1] *= 3;
         treTal[2] *= 4;
 
-        //     Addera resultaten:
+        // Addera resultaten:
         int summa = treTal[0] + treTal[1] + treTal[2];
 
-        //    Skriv ut slutvärdet:
+        // Skriv ut slutvärdet:
         System.out.printf("Summan är %d\n", summa);
     }
 
-    private static void övning6_2() {
+    static void övning6_2() {
         /*
             Pseudokod:
 
@@ -55,10 +52,9 @@ public class Övningar {
 
             Skriv ut totala antalet sekunder
         */
-
     }
 
-    private static void övning6_3() {
+    static void övning6_3() {
         /*
             Pseudokod:
 
@@ -74,7 +70,7 @@ public class Övningar {
         */
     }
 
-    private static void övning6_4() {
+    static void övning6_4() {
         System.out.println("Övning 6.4:");
         /*
             Pseudokod:

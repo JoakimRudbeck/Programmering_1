@@ -18,9 +18,7 @@ public class While {
         System.out.println("Nu avlsutades while-loopen eftersom villkoret inte längre är sant.");
     }
 
-
-
-    private static void whileContinueExempel() {
+    static void whileContinueExempel() {
         // Skriv ut alla tal som är delbara med 3
         int talet = 1;
         while(talet <= 50){
@@ -34,7 +32,7 @@ public class While {
         }
     }
 
-    private static void whileBreakExempel() {
+    static void whileBreakExempel() {
         // Skriv ut alla tal upp till och med 1337
         int räknare = 1;
         while(true){

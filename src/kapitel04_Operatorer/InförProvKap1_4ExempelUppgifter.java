@@ -11,14 +11,14 @@ public class InförProvKap1_4ExempelUppgifter {
         ex6();
     }
 
-    private static void ex1() {
+    static void ex1() {
         int[] minaTal = {2,5,8};
         minaTal[2] %= minaTal[1] - minaTal[0];
         minaTal[0] -= minaTal.length % 2;
         // Hur ser minaTal ut efter denna körning?
     }
 
-    private static void ex2() {
+    static void ex2() {
         int a = 5;
         int b = 5 % 3;
         int c = ++a * 5 * --b;
@@ -28,14 +28,14 @@ public class InförProvKap1_4ExempelUppgifter {
         int e = 20 - d;
     }
 
-    private static void ex3() {
+    static void ex3() {
         // Hur ser fältet ut efter denna körning?
         int[] fältet = {1,2,3};
         fältet[0] = fältet[2];
         fältet[1] += fältet[0];
     }
-    private static void ex4() {
 
+    static void ex4() {
 
         int[] fält = {1,2,3};
         int temp = fält[0];
@@ -44,14 +44,14 @@ public class InförProvKap1_4ExempelUppgifter {
         // Hur ser fält ut nu?
     }
 
-    private static void ex5() {
+    static void ex5() {
         int a = 8;
         int b = 5 * ++a;
         int c = (66 % b++) % 11;
         // Vad är värdet av c?
     }
 
-    private static void ex6() {
+    static void ex6() {
         int a = 4;
         int b = 5;          // a = 4, b = 5
         b -= (a/2);         // a = 4, b = 3
@@ -65,6 +65,5 @@ public class InförProvKap1_4ExempelUppgifter {
         System.out.println(b); // 3
         System.out.println((a+b) % 5); // 24 % 5 = 4, skriver ut 4
         // Vad skrivs ut ?
-
     }
 }

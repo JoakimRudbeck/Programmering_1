@@ -17,7 +17,7 @@ public class Övningar {
         System.out.println("Övningarna slutar");
     }
 
-    private static void övning2_1() {
+    static void övning2_1() {
         System.out.println("ÖVNING 2.1");
         double talA, talB, summa;           // Deklarerar tre variabler av typen double.
         talA = 2.1;                         // Tilldelar variabel talA värdet 3.14
@@ -28,7 +28,7 @@ public class Övningar {
         System.out.println("Summan är " + summa);
     }
 
-    private static void övning2_2() {
+    static void övning2_2() {
         System.out.println("ÖVNING 2.2");
         Scanner minScanner = new Scanner(System.in);            // Skapar ett Scanner-objekt som ska läsa från tangentbordet
         System.out.println("Skriv in ett tal, tack:");
@@ -38,7 +38,7 @@ public class Övningar {
         System.out.println(taletSomInt + " i kvadrat är " + kvadrat);
     }
 
-    private static void övning2_3() {
+    static void övning2_3() {
         System.out.println("ÖVNING 2.3");
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Ange din ålder:");
@@ -48,7 +48,7 @@ public class Övningar {
         System.out.println("Du fyller " + (ålder + årKvarTillNästaNollning) + " om " + årKvarTillNästaNollning + " år!");
     }
 
-    private static void övning2_4() {
+    static void övning2_4() {
         System.out.println("ÖVNING 2.4");
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Skriv ett heltal");
@@ -64,7 +64,7 @@ public class Övningar {
         System.out.println();
     }
 
-    private static void övning2_5() {
+    static void övning2_5() {
         System.out.println("ÖVNING 2.5");
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Ange för- och efternamn:");
@@ -76,7 +76,7 @@ public class Övningar {
         System.out.println();
     }
 
-    private static void övning2_6() {
+    static void övning2_6() {
         System.out.println("ÖVNING 2.6");
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Ange för- och efternamn:");
@@ -88,7 +88,7 @@ public class Övningar {
         System.out.println("Efternamn: " + efternamn);
     }
 
-    private static void övning2_7() {
+    static void övning2_7() {
         System.out.println("ÖVNING 2.7");
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Tecken: ");
@@ -98,7 +98,7 @@ public class Övningar {
         System.out.println("Tecknet " + förstaTecknetIIndata + " har teckenkoden " + tecknetsIntVärde);
     }
 
-    private static void övning2_8() {
+    static void övning2_8() {
         System.out.println("ÖVNING 2.8");
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Ange stor bokstav: ");
@@ -107,6 +107,5 @@ public class Övningar {
         char tecknetSomLitet = (char)(tecknet + 32);    // Skillnaden mellan stora A (65) och lilla a (97) är 32 enligt UNICODE-tabellen sid 37 i boken.
         System.out.println("Litet " + tecknet + " blir " + tecknetSomLitet);
     }
-
 
 }

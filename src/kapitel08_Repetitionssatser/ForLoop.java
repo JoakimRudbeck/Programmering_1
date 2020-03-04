@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ForLoop {
 
-    private static Scanner scan = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         ritaUppTriangel();
@@ -20,7 +20,7 @@ public class ForLoop {
 
     }
 
-    private static void ritaUppTriangel() {
+    static void ritaUppTriangel() {
         System.out.println("Höjd?");
         int höjd = Integer.valueOf(scan.nextLine());
         System.out.println("Tecken?");
@@ -34,7 +34,7 @@ public class ForLoop {
         }
     }
 
-    private static void ritaUppRektangel() {
+    static void ritaUppRektangel() {
         System.out.println("Höjd?");
         int höjd = Integer.valueOf(scan.nextLine());
         System.out.println("Bredd?");
@@ -50,7 +50,7 @@ public class ForLoop {
         }
     }
 
-    private static void beräknaMedelvärdeUrEnListaMedTal() {
+    static void beräknaMedelvärdeUrEnListaMedTal() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Hur många tal vill du spara?");
         int antal = Integer.valueOf(scan.nextLine());
@@ -70,7 +70,7 @@ public class ForLoop {
         System.out.println("Medelvärdet av talen i listan är " + medelvärde);
     }
 
-    private static void störstaTalILista() {
+    static void störstaTalILista() {
         System.out.println("Hur många tal vill du skriva in?");
         int antalTal = scan.nextInt();
 
@@ -92,7 +92,7 @@ public class ForLoop {
         System.out.println("Största är " + största);
     }
 
-    private static void forLoopExempel() {
+    static void forLoopExempel() {
         // En for-loop gör saker om och om igen.
         // For-loopen har en iterationsvariabel, ofta kallad i
         // For-loopen ändrar värdet på i efter varje varv i loopen
@@ -112,7 +112,7 @@ public class ForLoop {
 
     }
 
-    private static void forLoopExempelFrågaAnvändaren() {
+    static void forLoopExempelFrågaAnvändaren() {
         System.out.println("Startvärde?");
         int startVärde = Integer.valueOf(scan.nextLine());
         System.out.println("Slutvärde (inklusive)?");
@@ -126,8 +126,7 @@ public class ForLoop {
         System.out.println("Nu är vi utanför loopen och denna rad körs nu :)");
     }
 
-
-    private static void loopaIgenomEnLista() {
+    static void loopaIgenomEnLista() {
 
         String[] lista = {"mango", "äpple", "banan"};
 
@@ -141,9 +140,7 @@ public class ForLoop {
         System.out.println("Nu är vi utanför loopen");
     }
 
-
-
-    private static void fyllaEnListaMedVärden() {
+    static void fyllaEnListaMedVärden() {
         // Skapar en lista av strängar med 5 platser:
         String[] listaAvSträngar = new String[5];
 
@@ -168,7 +165,7 @@ public class ForLoop {
         }
     }
 
-    private static void nestladForLoopExempel() {
+    static void nestladForLoopExempel() {
         // Skriver ut alla koordinater i första kvadranten från origo till punkten (9,9)
         for(int y = 9; y >= 0; y--){
             for(int x = 0; x <= 9; x++){
@@ -176,10 +173,9 @@ public class ForLoop {
             }
             System.out.println();
         }
-
     }
 
-    private static void besökaKöpCentret() {
+    static void besökaKöpCentret() {
         // Besöker varje våning v:
         for(int v = 1; v <= 6; v++){
             // Besöker varje affär a
@@ -188,6 +184,5 @@ public class ForLoop {
             }
         }
     }
-
 
 }

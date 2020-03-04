@@ -1,10 +1,11 @@
-package kapitel03_Listor;
+package kapitel03_Arrayer_Listor_Fält;
 
 import java.util.Scanner;
 
 public class Arrayer_Listor_Fält {
 
     public static void main(String[] args){
+        skapaEnListaExempel();
         skrivaUtVärdenIEnLista();
         exempelMedSplit();
         betygExempel();
@@ -16,7 +17,31 @@ public class Arrayer_Listor_Fält {
         elevNamnExempel();
     }
 
-    private static void skrivaUtVärdenIEnLista() {
+    static void skapaEnListaExempel() {
+        // Tre variabler a,b,c
+        int a = 5;
+        int b = 7;
+        int c = 9;
+
+        // Istället för att ha tre olika variabler kan man skapa EN variabel som innehåller alla dessa tre värden såhär:
+
+        // Version 1:
+
+            int[] enListaAvTreTalVersion1 = new int[3]; // Vid deklareringen måste man ange hur många platser som ska finnas.
+            // Efter deklarationen ovan ser fältet ut såhär: [_,_,_] d.v.s tre tomma platser.
+
+            // Fylla fältet med värden:
+            enListaAvTreTalVersion1[0] = 5; // Ett fälts platser refereras till med hjälp av index
+            enListaAvTreTalVersion1[1] = 7; // Första platsen har index 0, andra 1, tredje 2 och så vidare.
+            enListaAvTreTalVersion1[2] = 9;
+
+            // Nu ser fältet/arrayen/listan ut såhär: [5,7,9]
+
+        // Version 2:
+            int[] enListaAvTreTal = {5,7,9}; // Ett enklare sätt är att göra såhär.
+    }
+
+    static void skrivaUtVärdenIEnLista() {
         System.out.println("Skapar lista...");
         String[] lista = {"hej", "hopp", "tjena"};
         System.out.println("Värdet i listan är:");
@@ -25,7 +50,7 @@ public class Arrayer_Listor_Fält {
         System.out.println(lista[2]);
     }
 
-    private static void betygExempel() {
+    static void betygExempel() {
         char[] betyg = new char[6];
         betyg[0] = 'A';
         betyg[1] = 'B';
@@ -39,8 +64,7 @@ public class Arrayer_Listor_Fält {
         System.out.println("Lägsta betyg är " + betyg[5]);
     }
 
-
-    private static void exempelMedSplit() {
+    static void exempelMedSplit() {
         String mening = "Detta är en mening";
         String[] listaMedAllaOrdIMeningen = mening.split(" ");
         int antalOrdIMeningen = listaMedAllaOrdIMeningen.length;
@@ -51,9 +75,7 @@ public class Arrayer_Listor_Fält {
         System.out.println(listaMedAllaOrdIMeningen[3]);
     }
 
-
-
-    private static void frukter() {
+    static void frukter() {
         // Skapar en lista (array) med 3 element.
         String[] minaFrukter = new String[3];
         minaFrukter[0] = "Banan";
@@ -67,7 +89,7 @@ public class Arrayer_Listor_Fält {
         System.out.println("Tredje frukten är " + minFruktKorg[2]);
     }
 
-    private static void bytaPlatsPåTvåElementILista() {
+    static void bytaPlatsPåTvåElementILista() {
         int[] lista = {3,5};
         System.out.println("Värdena innan = " + lista[0] + "," + lista[1]);
         int temp = lista[0];                                                    // Sparar undan det första värdet i en variabel.
@@ -77,7 +99,6 @@ public class Arrayer_Listor_Fält {
     }
 
     // Räknar ut hur många ord det finns i en mening.
-
     static void antalOrdIMening(){
         Scanner minScanner = new Scanner(System.in);
         System.out.println("Skriv in en mening, tack.");
@@ -86,6 +107,7 @@ public class Arrayer_Listor_Fält {
         String[] ordIMening = mening.split(" ");
         System.out.println("'" + mening + "' har " + ordIMening.length + " ord i sig.");
     }
+
     static void listorIListor(){
         int[] lista1 = {1,2,3};
         int[] lista2 = {4,5,6};
@@ -110,8 +132,7 @@ public class Arrayer_Listor_Fält {
         }
     }
 
-
-    private static void elevNamnExempel() {
+    static void elevNamnExempel() {
         String[] elevNamn = new String[3]; // en lista av 3 element
         elevNamn[0] = "liam";
         elevNamn[1] = "anton";

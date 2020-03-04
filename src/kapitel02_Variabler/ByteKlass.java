@@ -9,6 +9,6 @@ class ByteKlass {
         System.out.println(nästStörsta);
         System.out.println(störstaByte);
         System.out.println(ännuStörre);
-        // Fundera på varför får vi den utskrift vi får.
+        // Fundera på varför vi får den utskrift vi får.
     }
 }
