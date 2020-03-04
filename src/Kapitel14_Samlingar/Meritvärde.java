@@ -1,5 +1,7 @@
 package Kapitel14_Samlingar;
 
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -13,8 +15,9 @@ public class Meritvärde {
         Scanner scanner = new Scanner(System.in);
         String namn = scanner.nextLine();
         System.out.println("Hur många kurser vill du registrera?");
-        int antalKurser = parseInt(scanner.nextLine());
+        int antalKurser = Integer.valueOf(scanner.nextLine());
         HashMap<String, Character> kurser = new HashMap<>();
+
         for(int i = 1; i <= antalKurser; i++){
             System.out.println("Namn på kurs?");
             String kurs = scanner.nextLine();

@@ -35,6 +35,8 @@ public class InförProvKap1_4ExempelUppgifter {
         fältet[1] += fältet[0];
     }
     private static void ex4() {
+
+
         int[] fält = {1,2,3};
         int temp = fält[0];
         fält[0] = fält[2];
@@ -65,6 +67,4 @@ public class InförProvKap1_4ExempelUppgifter {
         // Vad skrivs ut ?
 
     }
-
-
 }
