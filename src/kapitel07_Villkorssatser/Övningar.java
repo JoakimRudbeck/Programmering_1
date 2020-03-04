@@ -11,7 +11,7 @@ public class Övningar {
         //övning7_4();
         //övning7_5();
         //övning7_6();
-        //övning7_7();
+        övning7_7();
     }
 
     private static void övning7_7() {
@@ -135,17 +135,6 @@ public class Övningar {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

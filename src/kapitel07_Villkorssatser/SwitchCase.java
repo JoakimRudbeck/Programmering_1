@@ -6,8 +6,37 @@ public class SwitchCase {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        humörMedIf();
-        humörMedSwitchCase();
+
+        String namn = "Joakim";
+        System.out.println("Vad heter du?");
+        String namnInput = scanner.nextLine();
+        System.out.println("Du heter " + namnInput);
+
+        if(namn.equals(namnInput)){
+            System.out.println("Du heter samma som läraren");
+        }
+        else{
+            System.out.println("Du heter inte samma som läraren");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //humörMedIf();
+        //humörMedSwitchCase();
     }
 
     private static void humörMedIf() {

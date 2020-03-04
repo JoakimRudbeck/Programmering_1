@@ -7,6 +7,11 @@ public class Meny {
 
 
     public static void main(String[] args) {
+
+
+        System.out.println("Pippi långstrum".substring(2,8));
+
+
         menyExempel1();
         menyExempel2();
     }

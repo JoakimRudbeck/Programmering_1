@@ -18,10 +18,25 @@ public class UppgifterSorteringOchSökning {
             osorteradLista[i] = scan.nextInt();
         }
         // sortera listan:
-        int[] sorteradLista = SorteringOchSökning.bubbelSortera(osorteradLista);
+        int[] sorteradLista = bubbelSortera(osorteradLista);
         // Skriv ut varje värde i den sorterade listan.
         for(int i = 0; i < osorteradLista.length; i++){
             System.out.println(osorteradLista[i]);
         }
+    }
+
+
+    static int[] bubbelSortera(int[] lista){
+        for(int i = lista.length - 1; i >= 0; i--){
+            for(int j = 0; j < i; j++){         // Loopar igenom paren i listan.
+                if(lista[j] > lista[j+1]){      // Om de vänstra värdet i paret är större än de högra.
+                    int temp = lista[j+1];      // Sparar undan de högra (mindre) värdet.
+                    lista[j+1] = lista[j];      // Lägger in de vänstra (större) värdet på den högra platsen i paret.
+                    lista[j] = temp;            // Lägger in de undansparade högra (mindre) värdet på den vänstra platsen i paret.
+                }
+            }
+        }
+        return lista;
+
     }
 }
