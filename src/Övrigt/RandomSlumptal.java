@@ -3,8 +3,25 @@ package Övrigt;
 public class RandomSlumptal {
 
     public static void main(String[] args) {
+        kronaKlaveExempel();
         simuleraTärningkast();
         beräknaSannolikhetFörSexaPåTärning();
+    }
+
+    static void kronaKlaveExempel() {
+        System.out.println("Kastar pengen upp i luften...");
+        String utfall = singlaSlant();
+        System.out.println("Det blev " + utfall);
+    }
+
+    static String singlaSlant(){
+        double slumptal = Math.random(); // ett tal mellan 0.0 och 0.9999999
+        if(slumptal < 0.5) {
+            return "krona";
+        }
+	    else{
+	        return "klave";
+        }
     }
 
     static void beräknaSannolikhetFörSexaPåTärning() {
