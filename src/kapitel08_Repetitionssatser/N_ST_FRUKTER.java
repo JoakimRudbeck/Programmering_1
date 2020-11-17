@@ -34,13 +34,6 @@ public class N_ST_FRUKTER {
         System.out.println("Vilken bokstav?");
         String bokstav = scanner.nextLine().toLowerCase();
 
-
-
-
-
-
-
-
         for (int i = 0; i < frukter.length; i++){
             if (frukter[i].toLowerCase().contains(bokstav)){ // Finns bokstaven frukten ?
                 antalFrukterSomMatcharBokstav++;
