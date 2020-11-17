@@ -13,6 +13,10 @@ public class N_ST_FRUKTER {
 
     Programmet ska sedan skriva ut hur många procent av de N frukterna som
     innehåller en viss bokstav.
+
+    Avslutningsvis ska programmet skriva ut alla frukterna som finns i
+    fruktkorgen:
+
     */
 
     static Scanner scanner = new Scanner(System.in);
@@ -43,6 +47,11 @@ public class N_ST_FRUKTER {
         System.out.println(antalFrukterSomMatcharBokstav + " av alla frukterna har bokstaven '" + bokstav + "' i sig");
 
         System.out.println((antalFrukterSomMatcharBokstav)*100.0/frukter.length + " procent av frukterna har bokstaven i sig.\n");
+
+        System.out.println("Fruktkorgen:");
+        for(int i = 0; i < frukter.length; i++){
+            System.out.println(frukter[i]);
+        }
 
     }
 }
