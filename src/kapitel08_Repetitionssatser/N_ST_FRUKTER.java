@@ -2,7 +2,18 @@ package kapitel08_Repetitionssatser;
 
 import java.util.Scanner;
 
-public class FYRA_ST_FRUKTER {
+public class N_ST_FRUKTER {
+
+    /*
+    Skriv ett program som frågar användaren efter N st frukter.
+    Dessa N st frukter ska sparas i ett fält av typen String[].
+
+    Användaren ska ges möjlighet att skriva in namnet på de N st frukterna
+    med hjälp av en loop.
+
+    Programmet ska sedan skriva ut hur många procent av de N frukterna som
+    innehåller en viss bokstav.
+    */
 
     static Scanner scanner = new Scanner(System.in);
 
