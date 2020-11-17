@@ -2,7 +2,7 @@ package kapitel08_Repetitionssatser;
 
 import java.util.Scanner;
 
-public class N_ST_FRUKTER {
+public class FYRA_ST_FRUKTER {
 
     static Scanner scanner = new Scanner(System.in);
 
@@ -23,7 +23,13 @@ public class N_ST_FRUKTER {
         System.out.println("Vilken bokstav?");
         String bokstav = scanner.nextLine().toLowerCase();
 
-        // kollar varje frukt om den innehåller bokstaven
+
+
+
+
+
+
+
         for (int i = 0; i < frukter.length; i++){
             if (frukter[i].toLowerCase().contains(bokstav)){ // Finns bokstaven frukten ?
                 antalFrukterSomMatcharBokstav++;
