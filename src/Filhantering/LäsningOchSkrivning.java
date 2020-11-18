@@ -16,7 +16,7 @@ public class LäsningOchSkrivning {
     }
 
     static void skrivTilFil() throws IOException {
-        FileWriter myWriter = new FileWriter("src\\LäsningFrånFil\\skrivfil.txt");
+        FileWriter myWriter = new FileWriter("src\\Filhantering\\skrivfil.txt");
         System.out.println("Vad vill du skriva till filen?");
         String dataTillFil = scanner.nextLine();
         myWriter.write(dataTillFil);
@@ -25,7 +25,7 @@ public class LäsningOchSkrivning {
     }
 
     static void läsningFrånFil() throws FileNotFoundException {
-        File file =  new File("src\\LäsningFrånFil\\läsfil.txt");
+        File file =  new File("src\\Filhantering\\läsfil.txt");
         Scanner reader = new Scanner(file);
         System.out.println("Innehållet i filen:");
         while(reader.hasNextLine()) {
