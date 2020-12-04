@@ -2,6 +2,7 @@ package kapitel08_Repetitionssatser;
 
 public class TalMellan1Och10000MedVillkor {
 
+
     /*
     Skriv ett program som skriver ut alla udda tal T mellan 1 och 10000 som
     uppfyller följande krav:

@@ -16,4 +16,26 @@ public class DoWhileLoop {
         System.out.println("Nu har vi kommit ut ur do-while-loopen");
     }
 
+
+
+
+
+
+
+
+    static void doWhileExempel2() {
+        int a = 4;
+        while(a == 5){
+            System.out.println("HEJ");
+        }
+
+
+        do{
+            System.out.println("hej"); // kommer ändå köra en gång
+        }
+        while(a==5); // är falskt
+
+        System.out.println("Nu har vi kommit ut ur do-while-loopen");
+    }
+
 }

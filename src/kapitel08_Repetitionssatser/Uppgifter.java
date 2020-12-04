@@ -7,12 +7,12 @@ public class Uppgifter {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //uppgift1();
-        //uppgift2();
-        //uppgift3();
-        //uppgift4();
-        //uppgift5();
-        //uppgift6();
+        uppgift1();
+        uppgift2();
+        uppgift3();
+        uppgift4();
+        uppgift5();
+        uppgift6();
 
     }
 
@@ -150,4 +150,6 @@ public class Uppgifter {
             }
         }
     }
+
+
 }
