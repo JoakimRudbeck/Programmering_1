@@ -2,8 +2,6 @@ package Kapitel09_Metoder;
 
 public class IntroMetoder {
 
-
-
     public static void main(String[] args) {
     /*
         Denna kommentar ligger inuti en metod som har namnet main.
@@ -28,10 +26,14 @@ public class IntroMetoder {
         När en metod har en returtyp måste metoden returnera ett värde.
         Det görs med hjälp av nyckelordet return.
         Om metoden saknar returtyp anges det med nyckelordet void.
+
+
         SYNLIGHET STATIC RETURTYP METODNAMN(EVENTUELLA PARAMETRAR){
             METOD-KROPP
             Eventuellt return ...
         }
+
+
         Exempel:
         public static double geMigPiMultipliceratMed(double faktor){
             double resultat = Math.PI * faktor;

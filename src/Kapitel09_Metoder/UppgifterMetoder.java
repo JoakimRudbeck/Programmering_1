@@ -8,16 +8,52 @@ public class UppgifterMetoder {
 
     public static void main(String[] args) {
         kusinUppgiften();
-        System.out.println(förstaHalvanAvOrdet("lampan"));
+        förstaHalvanAvOrdetExempel();
+        beräknahypotenusanExempel();
+        produktAvTalIListaExempel();
+        sammanslagenListExempel();
+        upprepningAvSträngExempel();
+    }
+
+    private static void beräknahypotenusanExempel() {
         System.out.println(hypotenusan(3,4));
+    }
+
+    private static void förstaHalvanAvOrdetExempel() {
+        System.out.println(förstaHalvanAvOrdet("lampan"));
+    }
+
+    private static void produktAvTalIListaExempel() {
         int[] tal = {1, 4, 6, 2};
         System.out.println(produktenAvTalILista(tal));
+    }
+
+    private static void sammanslagenListExempel() {
         int[] lista1 = {7, 3, -8};
         int[] lista2 = {-1, 0, 14, 23};
         int[] sammanslagenLista = sammanslagning(lista1, lista2);
         for(int i=0; i<sammanslagenLista.length; i++){
             System.out.print(sammanslagenLista[i] + ", ");
         }
+    }
+
+    static void upprepningAvSträngExempel() {
+        String svar = upprepningAvSträng("hej",8);
+        System.out.println("Detta var svaret vi fick från metoden: " + svar);
+    }
+
+    static String upprepningAvSträng(String text, int tal) {
+
+        // skapar en tom sträng ""
+        String resultat = "";
+
+        // for loop som loopar så många gånger som tal:
+        for(int i = 0; i < tal; i++){
+            // tomma strängen plussas på med text
+            resultat += text;
+        }
+        // return strängen.
+        return resultat;
     }
 
     static int[] sammanslagning(int[] l1, int[] l2){
